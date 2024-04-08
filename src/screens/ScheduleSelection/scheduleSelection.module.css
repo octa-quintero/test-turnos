@@ -1,0 +1,168 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: row;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 5px), 1fr));
+  gap: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+
+.nextButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 25px;
+    padding: 3px 20px;
+    border: 2px solid #e436d8;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    transition: 0.3s;
+  }
+
+  .selected {
+    background-color: #15abc6;
+    color: #ffffff;
+  }
+  
+  
+  .nextButton:hover {
+    background-color: #e436d821;
+  }
+
+  .iconButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    color: rgb(215, 6, 6);
+    transition: 1s;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+  }
+
+  
+  .ButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .active,
+  .active:hover {
+    background-color: #3c0448;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.servicecontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 200;
+}
+  
+.service{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+  .service1{
+    font-weight: bold;
+    font-size: 16px;
+    color: #e164d8;
+  }
+
+  .hourButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ancho actualizado */
+    height: 30px; /* Alto actualizado */
+    padding: 3px 20px;
+    border: #cb88c6 2px solid;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+
+  .selected {
+    width: 100%;
+    background-color: #cb88c6;
+  }
+  
+  .hourButton:hover {
+    border-color: #e164d8;
+    transform: scale(1.02); /* Aumenta el tamaño en un 10% */
+  }
+  
+  .active,
+  .active:hover {
+    background-color: #b618d9;
+  }
+  
+  .grid-item {
+    flex-basis: calc(33.33% - 10px); /* Ajusta el ancho de los elementos según el espacio disponible */
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+  .buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+

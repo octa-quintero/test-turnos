@@ -1,0 +1,28 @@
+@import "../BaseLayout/variables.modules.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(36, 44, 44);
+  border-radius: 30px;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 5%;
+  padding: 20px;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin-top: 10%;
+  }
+}

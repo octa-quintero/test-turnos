@@ -1,0 +1,68 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.buttonContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+
+.nextButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  padding: 3px 20px;
+  background-color: #cd48c4;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  transition: 0.3s;
+}
+
+
+button:hover {
+  border-color: #e164d8;
+  transform: scale(1.02); /* Aumenta el tamaño en un 10% */
+}
+
+.active,
+.active:hover {
+  background-color: #b618d9;
+}
+
+.iconButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 23px;
+  color: rgb(215, 6, 6);
+}
+
