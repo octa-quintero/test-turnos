@@ -12,13 +12,14 @@ import logo from '../../assets/Logo.png';
 
 export default function BaseLayout() {
   return (
-    <Box className={Style.container} sx={{ minHeight: '100vh' }}> 
+    <Box className={Style.container} sx={{ minHeight: '100%' }}> 
       <Grid
         container
         display={'flex'}
         flexDirection={'row'}
-        alignItems={'flex-start'}
+        alignItems={'space-between'}
         justifyContent={'center'}
+        width={'100%'}
         height={'auto'}
         padding={'10px'}
       >
@@ -34,14 +35,14 @@ export default function BaseLayout() {
             <Route path="/turnos" element={<Shifts />} />
           </Routes>
         </Grid>
-        <Grid item>
+
+      </Grid>
+        <Grid>
   <Box
     component={'footer'}
     display={'flex'}
     flexDirection={'column'}
     alignItems={'center'}
-    justifyContent={'flex-start'}
-    auto={'100vh'}
     py={'0.5rem'}
     sx={{ opacity: 0.7, width: '100%' }}
     paddingBottom={'10px'}
@@ -51,7 +52,6 @@ export default function BaseLayout() {
     <p style={{ fontSize: '10px', margin: '2px 0' }}>&copy; 2023</p>
   </Box>
 </Grid>
-      </Grid>
     </Box>
   );
 }

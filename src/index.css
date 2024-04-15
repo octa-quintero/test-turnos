@@ -1,9 +1,8 @@
 :root {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
-  line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
   background-color: #292929;
