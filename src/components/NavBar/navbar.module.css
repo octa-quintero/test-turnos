@@ -6,14 +6,8 @@
   gap: 20px;
 }
 
-.logoLink{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo{
-  width: 50%;
+  width: 200px;
 }
 
 .Subcontainer{

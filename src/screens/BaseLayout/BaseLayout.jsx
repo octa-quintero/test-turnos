@@ -16,9 +16,10 @@ export default function BaseLayout() {
       <Grid
         container
         display={'flex'}
-        flexDirection={'column'}
-        alignItems={'center'}
-        justifyContent={'space-between'}
+        flexDirection={'row'}
+        alignItems={'flex-start'}
+        justifyContent={'center'}
+        height={'auto'}
         padding={'10px'}
       >
         <Grid item>
@@ -34,20 +35,22 @@ export default function BaseLayout() {
           </Routes>
         </Grid>
         <Grid item>
-          <Box
-            component={'footer'}
-            display={'flex'}
-            flexDirection={'column'}
-            alignItems={'center'}
-            py={'0.5rem'}
-            sx={{ opacity: 0.7, width: '100%' }}
-            paddingBottom={'10px'}
-          >
-            <img src={logo} alt="Logo" style={{ width: '100px' }} />
-            <p style={{ fontSize: '12px', margin: '20px 0 2px 0' }}>Octavio Quintero</p>
-            <p style={{ fontSize: '10px', margin: '2px 0' }}>&copy; 2023</p>
-          </Box>
-        </Grid>
+  <Box
+    component={'footer'}
+    display={'flex'}
+    flexDirection={'column'}
+    alignItems={'center'}
+    justifyContent={'flex-start'}
+    auto={'100vh'}
+    py={'0.5rem'}
+    sx={{ opacity: 0.7, width: '100%' }}
+    paddingBottom={'10px'}
+  >
+    <img src={logo} alt="Logo" style={{ width: '150px', maxWidth: '100%' }} />
+    <p style={{ fontSize: '12px', margin: '20px 0 2px 0' }}>Octavio Quintero</p>
+    <p style={{ fontSize: '10px', margin: '2px 0' }}>&copy; 2023</p>
+  </Box>
+</Grid>
       </Grid>
     </Box>
   );
