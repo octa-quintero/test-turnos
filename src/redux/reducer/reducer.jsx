@@ -53,7 +53,6 @@ function reducer(state = initialState, action) {
         error: null
       };
     case 'CONFIRM_TIMESLOT_SUCCESS':
-      // Agregamos el id del servicio al horario confirmado
       const { serviceId, ...confirmedTimeSlot } = action.payload;
       return {
         ...state,
