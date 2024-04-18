@@ -4,7 +4,6 @@ export const confirmTimeSlot = (timeSlot) => {
   return async (dispatch) => {
     try {
       dispatch({ type: CONFIRM_TIMESLOT });
-      // Supongamos que timeSlot incluye el serviceName y el serviceId
       const response = await new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve(timeSlot);
