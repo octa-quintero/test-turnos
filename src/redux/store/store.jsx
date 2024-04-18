@@ -1,8 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
-import rootReducer from '../reducer/reducer';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
+import rootReducer from '../reducer/reducer'; // Importa el reducer combinado
 
-const store = configureStore({
-  reducer: rootReducer,
+const persistConfig = {
+  key: 'root',
+  storage,
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
 });
 
-export default store;
+export const persistor = persistStore(store);
