@@ -1,9 +1,15 @@
-:root {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+html{
   width: 100%;
-  font-weight: 400;
-  color-scheme: light dark;
-  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

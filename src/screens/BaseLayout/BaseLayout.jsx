@@ -12,20 +12,19 @@ import logo from '../../assets/Logo.png';
 
 export default function BaseLayout() {
   return (
-    <Box className={Style.container} sx={{ minHeight: '100%' }}> 
-      <Grid
-        container
-        display={'flex'}
-        flexDirection={'row'}
-        alignItems={'space-between'}
-        justifyContent={'center'}
-        width={'100%'}
-        height={'auto'}
-        padding={'10px'}
-      >
+    <Box className={Style.container}> 
         <Grid item>
           <NavBar/>
         </Grid>
+      <Grid
+        container
+        display={'flex'}
+        flexDirection={'column'}
+        alignItems={'center'}
+        justifyContent={'center'}
+        width={'100%'}
+        padding={'10px'}
+      >
         <Grid item xs={12} className={Style.main} sx={{ flexGrow: 1 }}> 
           <Routes>
             <Route exact path="/" element={<Home/>} />
