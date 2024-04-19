@@ -8,6 +8,7 @@ const NavBar = () => {
   return (
     <div className={Style.container}>
       <NavLink to="/" className={Style.logoLink}>
+        <img src={logo} alt="Logo" className={Style.logo} />
       </NavLink>
       <div className={Style.Subcontainer}>
         <Button 

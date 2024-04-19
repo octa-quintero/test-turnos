@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Asegúrate de importar desde 'react-dom/client'
+import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store, persistor } from './redux/store/store'; // Asegúrate de que estos son los nombres correctos
+import { store, persistor } from './redux/store/store';
 import App from './App';
-import { PersistGate } from 'redux-persist/integration/react'; // Asegúrate de tener esta importación si usas PersistGate
+import { PersistGate } from 'redux-persist/integration/react';
 
 const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
