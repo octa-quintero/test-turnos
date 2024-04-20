@@ -29,11 +29,13 @@ const Category = ({ onCategoryChange }) => {
       <select onChange={handleCategoryChange} className={style.containerfilter}>
         <option className={style.filter} value="">Todas las categorías</option>
         {categories.map((category, index) => (
-          <option className={style.filter1} key={index} value={category}>{category}</option>
+          <option className={style.filterOption} key={index} value={category}>
+            {category}
+          </option>
         ))}
       </select>
     </div>
   );
-};
+};  
 
 export default Category;

@@ -5,12 +5,11 @@
   width: 20px;
   height: 25px;
   padding: 0px 20px;
-  border: #cb88c6 2px solid;
+  border: rgb(218, 141, 7) 2px solid;
   color: #ffffff;
   border-radius: 5px;
   text-decoration: none;
   font-size: 10px;
-  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s;
   background-color: transparent;
@@ -18,6 +17,7 @@
 }
 
 .button:hover {
-  border-color: #e164d8;
+  box-shadow: 0 0 10px rgb(218, 141, 7);
   transform: scale(1.03);
+  font-weight: bold;
 }

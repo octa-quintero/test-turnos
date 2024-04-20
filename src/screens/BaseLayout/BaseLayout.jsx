@@ -16,15 +16,6 @@ export default function BaseLayout() {
         <Grid item>
           <NavBar/>
         </Grid>
-      <Grid
-        container
-        display={'flex'}
-        flexDirection={'column'}
-        alignItems={'center'}
-        justifyContent={'center'}
-        width={'100%'}
-        padding={'10px'}
-      >
         <Grid item xs={12} className={Style.main} sx={{ flexGrow: 1 }}> 
           <Routes>
             <Route exact path="/" element={<Home/>} />
@@ -34,8 +25,6 @@ export default function BaseLayout() {
             <Route path="/turnos" element={<Shifts />} />
           </Routes>
         </Grid>
-
-      </Grid>
         <Grid>
   <Box
     component={'footer'}

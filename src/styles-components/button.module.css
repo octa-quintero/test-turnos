@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px; /* Ancho actualizado */
-  height: 30px; /* Alto actualizado */
+  width: 70px;
+  height: 30px;
   padding: 3px 20px;
-  border: #cb88c6 2px solid;
+  border: rgb(218, 141, 7) 2px solid;
   color: #ffffff;
   border-radius: 5px;
   text-decoration: none;
@@ -14,17 +14,18 @@
   cursor: pointer;
   transition: background-color 0.2s;
   background-color: transparent;
-  transition: 0.3s;
+  transition: 0.2s;
+  gap: 5px;
 }
 
 .button:hover {
-  border-color: #e164d8;
-  transform: scale(1.02); /* Aumenta el tamaño en un 10% */
+  border: rgb(255, 162, 0) 2px solid;
+  transform: scale(1.03);
 }
 
-.active,
-.active:hover {
-  background-color: #b618d9;
+.active{
+  border: rgb(255, 162, 0) 2px solid;
+  background-color: rgba(255, 162, 0, 0.199);
+  transform: scale(1.01);
 }
-
 

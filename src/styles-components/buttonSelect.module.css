@@ -2,27 +2,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px; /* Ancho actualizado */
-  height: 30px; /* Alto actualizado */
+  width: 60px;
+  height: 30px;
   padding: 3px 20px;
-  border: #cb88c6 2px solid;
+  border: rgb(218, 141, 7) 2px solid;
   color: #ffffff;
   border-radius: 5px;
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s;
   background-color: transparent;
   transition: 0.3s;
 }
 
 .button:hover {
-  border-color: #e164d8;
-  transform: scale(1.02); /* Aumenta el tamaño en un 10% */
+  border-color: rgb(218, 141, 7);
+  transform: scale(1.02);
 }
 
 .active,
 .active:hover {
-  background-color: #b618d9;
+  background-color: #d93b18;
 }

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getService } from '../../../../redux/actions/actionService';
-import { NavLink } from 'react-router-dom';
 import style from './formCategory.module.css';
 import ButtonCard from '../../../../components/buttonCard';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

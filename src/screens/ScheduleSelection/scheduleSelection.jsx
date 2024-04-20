@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams, NavLink, useNavigate } from 'react-router-dom'; // Importa useNavigate
+import { useParams, NavLink, useNavigate } from 'react-router-dom';
 import { getSlots } from '../../redux/actions/slotsService';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBan } from '@fortawesome/free-solid-svg-icons';
@@ -25,12 +25,17 @@ const ScheduleSelection = () => {
   };
 
   const handleGoBack = () => {
-    navigate(-1); // Navega hacia atrás en la pila de historial
+    // Restablecer los estados
+    setSelectedTimeSlotIndex(null);
+    setIsNextButtonEnabled(false);
   };
 
   return (
     <div className="container">
-      <div className={style.service}><h3>Horarios para</h3><h3 className={style.service1}><b>{serviceName}</b></h3></div>
+      <div className={style.service}>
+        <h3>Horarios para</h3>
+        <h3 className={style.service1}><b>{serviceName}</b></h3>
+      </div>
       <p>Fecha: <b>{date}</b></p>
       {availableTimeslots && availableTimeslots.length > 0 && (
         <ul className="grid">
